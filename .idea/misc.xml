@@ -12,7 +12,6 @@
     </option>
     <option name="ignoredFiles">
       <set>
-        <option value="$PROJECT_DIR$/BackEnd/Netflix-Eureka-Server/pom.xml" />
         <option value="$PROJECT_DIR$/BackEnd/weather-forecast/pom.xml" />
         <option value="$PROJECT_DIR$/BackEnd/weather-service/pom.xml" />
       </set>

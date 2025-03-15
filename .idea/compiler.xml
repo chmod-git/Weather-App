@@ -7,10 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ZuulProxy" />
+        <module name="Netflix-Eureka-Server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Netflix-Eureka-Server" target="1.8" />
       <module name="weather-forecast" target="1.8" />
       <module name="weather-service" target="1.8" />
     </bytecodeTargetLevel>
