@@ -8,11 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ZuulProxy" />
         <module name="Netflix-Eureka-Server" />
+        <module name="weather-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="weather-forecast" target="1.8" />
-      <module name="weather-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
