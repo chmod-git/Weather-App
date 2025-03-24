@@ -1,16 +1,18 @@
 package weather.service;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import weather.exception.InternalServerException;
 import weather.model.Weather;
 import weather.repository.WeatherRepository;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.List;
 
 @Service
 public class WeatherService {
@@ -37,12 +39,17 @@ public class WeatherService {
 		log.info("--- Inside getWeatherByCityAndDate method of " + this.getClass().getSimpleName() + " ---");
 		try {
 			DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-			date = date.substring(0, 10);
-			LocalDate dd = LocalDate.parse(date, formatter);
-			return weatherRepository.findByCityNameAndDate(cityName,dd);
+			LocalDate localDate = LocalDate.parse(date, formatter);
+
+			LocalDateTime startOfDay = localDate.atStartOfDay();
+			LocalDateTime endOfDay = localDate.atTime(23, 59, 59);
+
+			List<Weather> weatherList = weatherRepository.findByCityNameAndDateBetween(cityName, startOfDay, endOfDay);
+
+			log.info("Weather data found: " + weatherList);
+			return weatherList;
 		} catch (Exception e) {
-			log.error(" --- Exception occured in getWeatherByCityAndDate method of " +
-					this.getClass().getSimpleName() + " ---");
+			log.error(" --- Exception in getWeatherByCityAndDate ---", e);
 			throw new InternalServerException(e.getMessage());
 		}
 	}

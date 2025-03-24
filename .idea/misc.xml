@@ -8,12 +8,9 @@
         <option value="$PROJECT_DIR$/BackEnd/weather-service/pom.xml" />
         <option value="$PROJECT_DIR$/BackEnd/weather-forecast/pom.xml" />
         <option value="$PROJECT_DIR$/BackEnd/Netflix-Eureka-Server/pom.xml" />
+        <option value="$PROJECT_DIR$/BackEnd/weather-details-insert/pom.xml" />
+        <option value="$PROJECT_DIR$/BackEnd/weather-details-bulk-insert/pom.xml" />
       </list>
-    </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/BackEnd/weather-forecast/pom.xml" />
-      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="corretto-1.8" project-jdk-type="JavaSDK">

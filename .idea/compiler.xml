@@ -6,19 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ZuulProxy" />
-        <module name="Netflix-Eureka-Server" />
+        <module name="weather-details-bulk-insert" />
         <module name="weather-service" />
+        <module name="weather-details-insert" />
+        <module name="ZuulProxy" />
+        <module name="weather-forecast" />
+        <module name="Netflix-Eureka-Server" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="weather-forecast" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Netflix-Eureka-Server" options="-parameters" />
       <module name="ZuulProxy" options="-parameters" />
+      <module name="weather-details-bulk-insert" options="-parameters" />
+      <module name="weather-details-insert" options="-parameters" />
       <module name="weather-forecast" options="-parameters" />
       <module name="weather-service" options="-parameters" />
     </option>

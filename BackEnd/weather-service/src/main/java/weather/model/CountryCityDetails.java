@@ -3,7 +3,7 @@ package weather.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "country-city-details")
+@Document(collection = "weather")
 public class CountryCityDetails {
 
 	@Id
@@ -34,6 +34,4 @@ public class CountryCityDetails {
 	public String toString() {
 		return "CountryCityDetails [countryName=" + countryName + ", cityName=" + cityName + "]";
 	}
-	
-	
 }
