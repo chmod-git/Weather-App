@@ -1,6 +1,6 @@
 [
   {
-    "cityName": "Вінниця",
+    "cityName": "Ві",
     "countryName": "Україна",
     "weatherDescription": "Сонячно",
     "temperature": "21",
@@ -11,7 +11,7 @@
     "date": "2025-03-25T14:00:00.000+00:00"
   },
   {
-    "cityName": "Чернівці",
+    "cityName": "Че",
     "countryName": "Україна",
     "weatherDescription": "Хмарно",
     "temperature": "16",
@@ -22,7 +22,7 @@
     "date": "2025-03-26T16:00:00.000+00:00"
   },
   {
-    "cityName": "Івано-Франківськ",
+    "cityName": "Івано-Фран",
     "countryName": "Україна",
     "weatherDescription": "Дощ",
     "temperature": "14",
