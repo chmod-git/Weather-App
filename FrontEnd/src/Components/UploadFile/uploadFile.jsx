@@ -26,7 +26,7 @@ class UploadFile extends React.Component {
       fd.append("file", file, file.name);
       axios
         .post(
-          "http://localhost:8765/bulkweather/bulkInsert/upload",
+          "http://localhost:8004/bulkInsert/fileUpload",
           fd,
           headers
         )

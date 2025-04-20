@@ -36,7 +36,7 @@ class Landing extends React.Component {
   componentDidMount() {
     axios({
       method: "GET",
-      url: `http://localhost:8765/weatherUI/fetchcity/India`,
+      url: `http://localhost:8001/fetchcity/Ukraine`,
       headers: {
         "Content-Type": "application/json"
       }
@@ -61,11 +61,11 @@ class Landing extends React.Component {
     };
 
     const cityVal = this.state.cityName;
-    const dateVal = moment(this.state.startDate).format();
+    const dateVal = moment(this.state.startDate).format('YYYY-MM-DD');
 
     axios({
       method: "GET",
-      url: `http://localhost:8765/weatherUI/weather/citydate/${cityVal}/${dateVal}`,
+      url: `http://localhost:8001/weather/citydate/${cityVal}/${dateVal}`,
       headers: {
         "Content-Type": "application/json"
       },
@@ -98,13 +98,13 @@ class Landing extends React.Component {
                       onChange={this.handleCityChange}
                     >
                       <option value="">Select any city..</option>
-                      <option value="Bangalore">Bangalore</option>
-                      <option value="Hyderabad">Hyderabad</option>
-                      <option value="Kolkata">Kolkata</option>
-                      <option value="Mumbai">Mumbai</option>
-                      <option value="Pune">Pune</option>
-                      <option value="Chennai">Chennai</option>
-                      <option value="Delhi">Delhi</option>
+                      <option value="New York">New York</option>
+                      <option value="London">London</option>
+                      <option value="Tokyo">Tokyo</option>
+                      <option value="Sydney">Sydney</option>
+                      <option value="Dubai">Dubai</option>
+                      <option value="Dublin">Dublin</option>
+                      <option value="Amsterdam">Amsterdam</option>
                       {this.state.cityDetails.map((city, index) => (
                         <option key={city} value={city}>
                           {city}

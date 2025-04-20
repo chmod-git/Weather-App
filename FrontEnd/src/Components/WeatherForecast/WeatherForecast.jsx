@@ -42,7 +42,7 @@ class WeatherForecast extends React.Component {
   componentDidMount() {
     axios({
       method: "GET",
-      url: `http://localhost:8765/weatherUI/fetchcity/India`,
+      url: `http://localhost:8001/fetchcity/Ukraine`,
       headers: {
         "Content-Type": "application/json"
       }
@@ -67,12 +67,12 @@ class WeatherForecast extends React.Component {
     };
 
     const cityVal = this.state.cityName;
-    const startDateVal = moment(this.state.startDate).format();
-    const endDateVal = moment(this.state.endDate).format();
+    const startDateVal = moment(this.state.startDate).format('YYYY-MM-DD');
+    const endDateVal = moment(this.state.endDate).format('YYYY-MM-DD');
 
     axios({
       method: "GET",
-      url: `http://localhost:8765/forecastUI/forecast/${cityVal}/${startDateVal}/${endDateVal}`,
+      url: `http://localhost:8002/forecast/${cityVal}/${startDateVal}/${endDateVal}`,
       headers: {
         "Content-Type": "application/json"
       },
@@ -105,13 +105,13 @@ class WeatherForecast extends React.Component {
                       onChange={this.handleCityChange}
                     >
                       <option value="">Select any city..</option>
-                      <option value="Bangalore">Bangalore</option>
-                    <option value="Hyderabad">Hyderabad</option>
-                    <option value="Kolkata">Kolkata</option>
-                    <option value="Mumbai">Mumbai</option>
-                    <option value="Pune">Pune</option>
-                    <option value="Chennai">Chennai</option>
-                    <option value="Delhi">Delhi</option>
+                      <option value="New York">New York</option>
+                      <option value="London">London</option>
+                      <option value="Tokyo">Tokyo</option>
+                      <option value="Sydney">Sydney</option>
+                      <option value="Dubai">Dubai</option>
+                      <option value="Dublin">Dublin</option>
+                      <option value="Amsterdam">Amsterdam</option>
                       {this.state.cityDetails.map((city, index) => (
                         <option key={city} value={city}>
                           {city}

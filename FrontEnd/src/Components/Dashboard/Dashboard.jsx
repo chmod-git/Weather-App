@@ -10,7 +10,7 @@ class Dashboard extends React.Component {
         loading: true
     };
 
-    cities = ["New York", "London", "Tokyo", "Sydney", "Dubai", "Dublin"];
+    cities = ["Tokyo", "Sydney", "Dubai", "Dublin", "New York", "London"];
 
     componentDidMount() {
         const endDateVal = "2025-03-31";

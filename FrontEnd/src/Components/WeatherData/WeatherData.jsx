@@ -43,7 +43,7 @@ class WeatherData extends React.Component {
     const c = event.target.value;
     axios({
       method: "GET",
-      url: `http://localhost:8765/weatherUI/fetchcity/${c}`,
+      url: `http://localhost:8001/fetchcity/${c}`,
       headers: {
         "Content-Type": "application/json"
       }
@@ -114,7 +114,7 @@ class WeatherData extends React.Component {
     insertRequestData.date = insertRequestData.date.substring(0, 10);
     axios({
       method: "POST",
-      url: `http://localhost:8765/addweather/insert`,
+      url: `http://localhost:8003/insert`,
       headers: {
         "Content-Type": "application/json"
       },
@@ -142,7 +142,6 @@ class WeatherData extends React.Component {
   render() {
     return (
       <div className="row">
-        {/* <Header /> */}
         <section className="container del-body">
           <form
             className="weatherdateForm"
@@ -158,13 +157,14 @@ class WeatherData extends React.Component {
                     onChange={this.handleCountryChange}
                   >
                     <option value="">Select any Country..</option>
-                    <option value="India">India</option>
-                    <option value="Us">Us</option>
+                    <option value="US">US</option>
                     <option value="Ireland">Ireland</option>
-                    <option value="Uk">Uk</option>
-                    <option value="Netherland">Netherland</option>
+                    <option value="UK">UK</option>
+                    <option value="Netherlands">Netherlands</option>
                     <option value="Germany">Germany</option>
                     <option value="France">France</option>
+                    <option value="Australia">Australia</option>
+                    <option value="UAE">UAE</option>
                   </select>
                 </div>
               </div>
@@ -179,13 +179,13 @@ class WeatherData extends React.Component {
                     onChange={this.handleCityChange}
                   >
                     <option value="">Select any city..</option>
-                    <option value="Bangalore">Bangalore</option>
-                    <option value="Hyderabad">Hyderabad</option>
-                    <option value="Kolkata">Kolkata</option>
-                    <option value="Mumbai">Mumbai</option>
-                    <option value="Pune">Pune</option>
-                    <option value="Chennai">Chennai</option>
-                    <option value="Delhi">Delhi</option>
+                    <option value="New York">New York</option>
+                    <option value="London">London</option>
+                    <option value="Tokyo">Tokyo</option>
+                    <option value="Sydney">Sydney</option>
+                    <option value="Dubai">Dubai</option>
+                    <option value="Dublin">Dublin</option>
+                    <option value="Amsterdam">Amsterdam</option>
                     {this.state.cityDetails.map((city, index) => (
                       <option key={city} value={city}>
                         {city}
