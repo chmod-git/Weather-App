@@ -1,35 +1,35 @@
 [
   {
-    "cityName": "Ві",
-    "countryName": "Україна",
-    "weatherDescription": "Сонячно",
-    "temperature": "21",
-    "cloudsDescription": "Ясне небо",
-    "windDescription": "Легкий вітерець",
-    "pressure": "1019",
-    "humidityPercentage": "35",
-    "date": "2025-03-25T14:00:00.000+00:00"
+    "cityName": "Berlin",
+    "countryName": "Germany",
+    "weatherDescription": "Foggy",
+    "temperature": "8",
+    "cloudsDescription": "Mist",
+    "windDescription": "Calm",
+    "pressure": "1015",
+    "humidityPercentage": "92",
+    "date": "2025-03-23T11:00:00.000+00:00"
   },
   {
-    "cityName": "Че",
-    "countryName": "Україна",
-    "weatherDescription": "Хмарно",
-    "temperature": "16",
-    "cloudsDescription": "Змінна хмарність",
-    "windDescription": "Помірний вітер",
-    "pressure": "1011",
-    "humidityPercentage": "50",
-    "date": "2025-03-26T16:00:00.000+00:00"
+    "cityName": "Sydney",
+    "countryName": "Australia",
+    "weatherDescription": "Hot",
+    "temperature": "30",
+    "cloudsDescription": "Clear",
+    "windDescription": "Gentle breeze",
+    "pressure": "1010",
+    "humidityPercentage": "40",
+    "date": "2025-03-23T11:00:00.000+00:00"
   },
   {
-    "cityName": "Івано-Фран",
-    "countryName": "Україна",
-    "weatherDescription": "Дощ",
-    "temperature": "14",
-    "cloudsDescription": "Пасмурно",
-    "windDescription": "Сильний вітер",
-    "pressure": "1007",
-    "humidityPercentage": "75",
-    "date": "2025-03-27T18:00:00.000+00:00"
+    "cityName": "Moscow",
+    "countryName": "Russia",
+    "weatherDescription": "Snowy",
+    "temperature": "-5",
+    "cloudsDescription": "Overcast",
+    "windDescription": "Strong wind",
+    "pressure": "1005",
+    "humidityPercentage": "90",
+    "date": "2025-03-23T11:00:00.000+00:00"
   }
 ]
